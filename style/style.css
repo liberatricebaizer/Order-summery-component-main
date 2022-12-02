@@ -1,0 +1,169 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--Desaturated-blue);
+}
+
+button {
+  font-family: inherit;
+}
+
+.bg__image {
+  background: url("/images/pattern-background-mobile.svg") no-repeat
+    center/cover;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-change {
+  background-color: transparent;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--Bright-blue);
+  color: #fff;
+  padding: 10px 80px;
+  margin-bottom: 30px;
+  box-shadow: 3px 15px 30px rgb(138, 144, 168);
+}
+
+.btn-primary:hover {
+  background-color: hsl(224deg, 23%, 55%);
+}
+
+.btn-primary:hover,
+.btn-change:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--Desaturated-blue);
+}
+
+.btn-secondary:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.btn-secondary:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.container {
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px hsl(228deg, 45%, 44%);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: hsl(223deg, 47%, 23%);
+}
+
+p.desc {
+  padding: 0 30px;
+}
+
+img.hero {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.pricing {
+  margin: 30px auto;
+  padding: 30px;
+  background-color: var(--Very-pale-blue);
+  width: 90%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing article img {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .bg__image {
+    background: url("/images/pattern-background-desktop.svg") no-repeat
+      center/cover;
+    height: 50vh;
+  }
+
+  .container {
+    width: 500px;
+  }
+}
+/* Attrubition */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+} /*# sourceMappingURL=style.css.map */
